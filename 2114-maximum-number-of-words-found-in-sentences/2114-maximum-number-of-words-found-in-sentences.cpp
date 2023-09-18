@@ -9,13 +9,13 @@ public:
                 if(sentences[i][j]==' ')
                     count++;
             }
-
-            if(count+1>count2)
+            count+=1;
+            if(count>count2)
             {
-              count2=count+1;
+              count2=count;
             }   
-                
         }
+        cout<<count;
         return count2;
     }
 };
